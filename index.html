@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <title>Password Generator</title>
+    <link rel="icon" href="images/iconlock.jpg">
+    <link rel="stylesheet" href="passwordgeneratorstyling.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap" rel="stylesheet">
+</html>
+<body>
+    <div id="container">
+        <h1 id="title-txt">Generate a <br><span id="green-txt">random password</span></h1>
+        <p id="slogan-txt">Never use an insecure password again.</p>
+        <button id="password-btn" onclick="passwordGenerator()">Generate passwords</button>
+        <div id="division"></div>
+        <div id="generated-password-container">
+            <div class="rectangle-background">
+                <h3 class="password-txt" id="left-password"></h3>
+            </div>
+            <div class="rectangle-background">
+                <h3 class="password-txt" id="right-password"></h3>
+            </div>
+        </div>
+        <input type="text" placeholder="Enter the desired length of your password" id="length-input">
+        <div id="options-container">
+            <div class="symbol-number-container">
+                <h2 class="symbols-number-txt">Symbols:</h2>
+                <button class="on-off-btn" id="symbol-btn" onclick="onOffSymbols()">Off</button>
+            </div>
+            <div class="symbol-number-container">
+                <h2 class="symbols-number-txt">Numbers:</h2>
+                <button class="on-off-btn" id="number-btn" onclick="onOffNumbers()">Off</button>
+            </div>
+        </div>
+       
+    </div>
+    <script src="passwordgeneratorbackend.js"></script>
+</body>
